@@ -15,4 +15,4 @@ If the number is odd, multiply by 3 and add 1.
 
 You will always arrive at the number 1.
 
-![Image Web](img/image-web.png)
+![Image Web](img/web-image.png)
