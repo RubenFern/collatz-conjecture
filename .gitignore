@@ -1,0 +1,14 @@
+# Carpeta de salida de compilación de TypeScript
+/dist/
+
+# Carpeta de módulos de Node.js
+/node_modules/
+
+# Archivo de configuración de TypeScript
+tsconfig.json
+
+# Archivo de configuración de TypeScript para pruebas
+tsconfig.spec.json
+
+# Archivo de bloqueo de Yarn
+yarn.lock
