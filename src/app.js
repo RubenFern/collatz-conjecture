@@ -1,8 +1,13 @@
 "use strict";
 function calculate() {
     let value = parseInt(document.getElementById("number").value);
-    if (value <= 0 || !Number.isInteger(value) || value.toString().length > 20)
+    if (value <= 0 || !Number.isInteger(value) || value.toString().length > 20) {
+        const divAlert = document.createElement("div");
+        divAlert.setAttribute("class", "alert alert-danger");
+        divAlert.setAttribute("role", "alert");
+        document.body.appendChild(divAlert);
         return;
+    }
     const container = document.getElementById("sandbox");
     if (container != null)
         container.innerHTML = "";

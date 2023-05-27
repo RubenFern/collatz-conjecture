@@ -2,8 +2,16 @@ function calculate()
 {
     let value: number = parseInt(( <HTMLInputElement>document.getElementById("number")).value );
 
-    if ( value <= 0 || !Number.isInteger(value) || value.toString().length > 20 ) 
+    if ( value <= 0 || !Number.isInteger(value) || value.toString().length > 20 )
+    {
+        const divAlert = document.createElement("div");
+
+        divAlert.setAttribute("class", "alert alert-danger");
+        divAlert.setAttribute("role", "alert");
+        document.body.appendChild(divAlert);
+                
         return;
+    }
 
     const container = document.getElementById("sandbox");
     
