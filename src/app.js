@@ -9,6 +9,7 @@ function calculate() {
     addNumber(value);
     let i = 1;
     while (value != 1) {
+        console.log("calcula");
         if (value % 2 == 0)
             value = parseInt((value / 2).toString());
         else
@@ -19,6 +20,7 @@ function calculate() {
     }
 }
 function clearContainer() {
+    console.log("limpia");
     const container = document.getElementById("sandbox");
     if (container == null)
         return;
