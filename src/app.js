@@ -2,10 +2,7 @@
 function calculate() {
     let value = parseInt(document.getElementById("number").value);
     if (value <= 0 || !Number.isInteger(value) || value.toString().length > 20) {
-        const divAlert = document.createElement("div");
-        divAlert.setAttribute("class", "alert alert-danger");
-        divAlert.setAttribute("role", "alert");
-        document.body.appendChild(divAlert);
+        showAlert();
         return;
     }
     const container = document.getElementById("sandbox");
@@ -80,4 +77,17 @@ function chechSizeNumber(v, container) {
         container.style.minWidth = "120px";
         container.style.minHeight = "120px";
     }
+}
+function showAlert() {
+    const container = document.getElementById("input_number");
+    if (container == null)
+        return;
+    const divAlert = document.createElement("div");
+    divAlert.setAttribute("class", "alert alert-danger alert-dismissible fixed-top w-25 text-center m-auto mt-4");
+    divAlert.setAttribute("role", "alert");
+    divAlert.textContent = "El número no es válido";
+    setTimeout(() => {
+        divAlert.style.visibility = "hidden";
+    }, 3000);
+    container.appendChild(divAlert);
 }
