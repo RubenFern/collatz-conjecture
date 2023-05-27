@@ -25,6 +25,10 @@ function clearContainer() {
     if (container == null)
         return;
     container.innerHTML = "";
+    const textField = document.getElementById("number");
+    if (textField == null)
+        return;
+    textField.textContent = "";
 }
 function addNumber(v) {
     const container = document.getElementById("sandbox");

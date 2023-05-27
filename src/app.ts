@@ -40,6 +40,14 @@ function clearContainer()
         return;
 
     container.innerHTML = "";
+
+    const textField = document.getElementById("number") as HTMLInputElement;
+
+    if ( textField == null )
+    return;
+
+    textField.value = "";
+    textField.focus();
 }
 
 function addNumber(v: number)
@@ -138,7 +146,7 @@ function showAlert()
 
     setTimeout(() => {
         divAlert.style.visibility = "hidden";
-    }, 3000);
+    }, 1500);
 
     container.appendChild(divAlert);
 }

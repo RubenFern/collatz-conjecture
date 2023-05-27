@@ -25,6 +25,11 @@ function clearContainer() {
     if (container == null)
         return;
     container.innerHTML = "";
+    const textField = document.getElementById("number");
+    if (textField == null)
+        return;
+    textField.value = "";
+    textField.focus();
 }
 function addNumber(v) {
     const container = document.getElementById("sandbox");
@@ -88,6 +93,6 @@ function showAlert() {
     divAlert.textContent = "El número no es válido";
     setTimeout(() => {
         divAlert.style.visibility = "hidden";
-    }, 3000);
+    }, 1500);
     container.appendChild(divAlert);
 }
