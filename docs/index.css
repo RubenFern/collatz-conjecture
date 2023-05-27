@@ -1,0 +1,113 @@
+body {
+    background-color: #353535;
+    margin: 0;
+}
+
+header {
+    height: 20vh;
+}
+
+.input_number {
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    padding: 2rem;
+}
+
+.sandbox {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 20px;
+    overflow: auto;
+}
+
+#nextNumber {
+    color: #fff;
+    border-radius: 100%;
+    background: linear-gradient(to bottom right, #1CB5E0 0%, #000851 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+#number {
+    width: 20%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+#number:focus {
+    outline: none;
+}
+
+#number::placeholder {
+    font-size: 17px;
+}
+
+#bCalculate {
+    background: linear-gradient(to bottom right, #1CB5E0, #000851);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+#bCalculate:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 172, 239, 0.5), .125rem .125rem 1rem rgba(90, 167, 255, 0.5);
+}
+
+#bClear {
+    background: linear-gradient(to bottom right, #1CB5E0, #000851);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+#bClear:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 172, 239, 0.5), .125rem .125rem 1rem rgba(90, 167, 255, 0.5);
+}
+
+.bi {
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
