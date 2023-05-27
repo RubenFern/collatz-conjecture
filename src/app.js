@@ -1,7 +1,7 @@
 "use strict";
 function calculate() {
     let value = parseInt(document.getElementById("number").value);
-    if (value <= 0 || !Number.isInteger(value) || value.toString().length > 20) {
+    if (value <= 0 || !Number.isInteger(value) || document.getElementById("number").value.length > 20) {
         showAlert();
         return;
     }
