@@ -12,12 +12,16 @@
 <body>
     <header>
         <div class="input_number" id="input_number">
-            <input type="number" name="number" id="number" min="1" placeholder="Introduce un número">
-            <button onclick="calculate()" id="bCalculate">Calcular</button>
-            <button onclick="clearContainer()" id="bClear">Limpiar</button>
+            <a href="https://github.com/RubenFern/Collatz-Conjecture" target="_blank"><img src="img/github.svg" alt="github.svg" class="github"></a>
+            <div class="nav_menu">
+                <input type="number" name="number" id="number" min="1" placeholder="Introduce un número">
+                <button onclick="calculate()" id="bCalculate">Calcular</button>
+                <button onclick="clearContainer()" id="bClear">Limpiar</button>
+            </div>
+            
         </div>
     </header>
-    
+        
     <div class="sandbox" id="sandbox"></div>
 
     <script src="src/app.js"></script>
